@@ -24,10 +24,10 @@ Anaconda - Python 3.7
 <br>Thus the program is executed in jupyter notebook.
 
 ## Program:
-```python
+python
 Developed By: SANTHIYA R
 Register Number: 212223230192
-i)Image Translation
+### i)Image Translation
 ```
 import cv2
 import numpy as np
@@ -48,7 +48,7 @@ plt.title("Translated Image")
 plt.axis('off')
 ```
 
-ii) Image Scaling
+### ii) Image Scaling
 ```
 fx, fy = 4.0, 2.0  
 scaled_image = cv2.resize(img, None, fx=fx, fy=fy, interpolation=cv2.INTER_LINEAR)
@@ -59,7 +59,7 @@ plt.axis('off')
 ```
 
 
-iii)Image shearing
+### iii)Image shearing
 ```
 shear_matrix = np.float32([[1, 0.5, 0], [0.3, 1, 0]])  
 sheared_image = cv2.warpAffine(img, shear_matrix, (img.shape[1], img.shape[0]))
@@ -69,7 +69,7 @@ plt.axis('off')
 ```
 
 
-iv)Image Reflection
+### iv)Image Reflection
 ```
 reflected_image = cv2.flip(img, 2)
 plt.imshow(cv2.cvtColor(reflected_image, cv2.COLOR_BGR2RGB))  
@@ -78,7 +78,7 @@ plt.axis('off')
 ```
 
 
-v)Image Rotation
+### v)Image Rotation
 ```
 (height, width) = img.shape[:2] 
 angle = 90
@@ -92,7 +92,7 @@ plt.axis('off')
 
 
 
-vi)Image Cropping
+### vi)Image Cropping
 
 ```
 x, y, w, h = 100, 100, 200, 150 
@@ -102,7 +102,6 @@ plt.title("Cropped Image")
 plt.axis('off')
 ```
 
-```
 ## Output:
 ### i)Original Image
 ![Screenshot 2025-04-11 110720](https://github.com/user-attachments/assets/a1d0d69c-bb77-4a48-9266-49eca95fea95)
