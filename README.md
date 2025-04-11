@@ -24,9 +24,10 @@ Anaconda - Python 3.7
 <br>Thus the program is executed in jupyter notebook.
 
 ## Program:
-python
+```
 Developed By: SANTHIYA R
 Register Number: 212223230192
+```
 ### i)Image Translation
 ```
 import cv2
